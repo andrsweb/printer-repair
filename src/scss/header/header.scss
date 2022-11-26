@@ -1,0 +1,110 @@
+.header {
+	padding: 15px 0;
+	background: $main;
+
+	.container {
+		max-width: 1200px;
+	}
+
+	&-logo {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			opacity: 1;
+
+			img {
+				transform: rotate( 360deg);
+			}
+
+			.header-logo-text {
+				color: $white;
+
+				span {
+					color: $black;
+				}
+			}
+		}
+
+		img {
+			transition: transform ease 1s;
+			margin: 0 5px;
+		}
+
+		&-text {
+			font-family: $ff;
+			font-weight: $fw-bold;
+			text-transform: uppercase;
+			font-size: 20px;
+			transition: color ease $tr;
+			color: $black;
+
+			span {
+				transition: color ease $tr;
+				color: $white;
+			}
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
+	}
+
+	&-work {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			text-align: left;
+		}
+
+		&-text {
+			font-size: 15px;
+			color: $white;
+
+			@media all and (min-width: $lg) {
+				font-size: 20px;
+			}
+		}
+
+		.header-phone {
+			font-size: 20px;
+			font-weight: $fw-bold;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+
+	&-master {
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+		font-size: 20px;
+		color: $white;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+			margin-bottom: 0;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+		}
+	}
+}

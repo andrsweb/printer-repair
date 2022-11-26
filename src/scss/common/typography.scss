@@ -33,6 +33,7 @@ a {
 	display: inline-block;
 	text-decoration: none;
 	transition: opacity ease-out $tr;
+	color: $black;
 
 	&:hover {
 		opacity: $op;

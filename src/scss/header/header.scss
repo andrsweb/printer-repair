@@ -1,0 +1,79 @@
+.header {
+    padding: 15px 0;
+    background: $main;
+
+    .container {
+        max-width: 1200px;
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+
+            img {
+                transform: rotate( 360deg);
+            }
+
+            .header-logo-text {
+                color: $white;
+
+                span {
+                    color: $black;
+                }
+            }
+        }
+
+        img {
+            transition: transform ease 1s;
+            margin: 0 5px;
+        }
+
+        &-text {
+            font-family: $ff;
+            font-weight: $fw-bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            transition: color ease $tr;
+            color: $black;
+
+            span {
+                transition: color ease $tr;
+                color: $white;
+            }
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-work {
+
+        &-text {
+            font-size: 20px;
+            color: $white;
+        }
+
+        .header-phone {
+            font-size: 20px;
+            font-weight: $fw-bold;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    &-master {
+        font-weight: $fw-bold;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: $white;
+    }
+}

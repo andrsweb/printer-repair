@@ -1,0 +1,91 @@
+.stock {
+	padding: 50px 0;
+
+	.container {
+		max-width: 1400px;
+	}
+
+	h2 {
+		font-size: 60px;
+		margin-bottom: 0;
+		text-align: center;
+		color: $span;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+
+	&-headings {
+		width: 50%;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.timer {
+			width: 50%;
+			padding: 0 60px 20px 60px;
+			background: $main;
+			font-family: $ff;
+			font-weight: $fw-bold;
+			font-size: 60px;
+			border-radius: $border;
+			color: $white;
+			display: flex;
+			justify-content: space-between;
+
+			.days, .hours, .minutes, .seconds {
+				display: flex;
+				justify-content: center;
+
+				&::after {
+					content: "Дней";
+					position: absolute;
+					bottom: -20px;
+					left: 50%;
+					transform: translateX( -50% );
+					font-size: 20px;
+				}
+			}
+
+			.days {
+				position: relative;
+				width: 25%;
+
+				&::after {
+					content: "Дней";
+				}
+			}
+
+			.hours {
+				position: relative;
+				width: 25%;
+
+				&::after {
+					content: "Часов";
+				}
+			}
+
+			.minutes {
+				position: relative;
+				width: 25%;
+
+				&::after {
+					content: "Минут";
+				}
+			}
+
+			.seconds {
+				position: relative;
+				width: 25%;
+
+				&::after {
+					content: "Секунд";
+				}
+			}
+		}
+	}
+}

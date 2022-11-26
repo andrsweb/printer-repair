@@ -1,6 +1,7 @@
 // Grid.
 $xs	: 375px;
 $sm	: 480px;
+$m	: 576px;
 $md	: 768px;
 $lg	: 992px;
 $xl	: 1200px;
@@ -39,7 +40,9 @@ $white	: #FFFFFF;
 $black	: #353535;
 $main	: #3C6E71;
 $accent	: #e8faf4;
+$span   : rgb(202, 13, 13);
 
 // Others.
 $tr: 0.35s;
 $op: 0.7;
+$border: 5px;

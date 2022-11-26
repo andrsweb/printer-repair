@@ -44,5 +44,8 @@
   },
   "browserslist": [
     "last 3 versions"
-  ]
+  ],
+  "dependencies": {
+    "@critick/astimer": "^1.0.3"
+  }
 }

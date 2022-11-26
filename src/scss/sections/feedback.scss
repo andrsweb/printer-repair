@@ -76,4 +76,13 @@
             }
         }
     }
+
+    .form.success {
+        padding: 5px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: $border;
+        color: $white;
+        background: $main;
+    }
 }

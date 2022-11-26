@@ -6,9 +6,16 @@
 	top: 0;
 	left: 0;
 	z-index: 100;
+	transition: box-shadow ease $tr,
+				padding ease $tr;
 
 	.container {
 		max-width: 1200px;
+	}
+
+	&.scrolled {
+		box-shadow: 1px 1px 3px 1px rgba(5, 43, 13, 0.671);
+		padding: 12px 0;
 	}
 
 	&-logo {

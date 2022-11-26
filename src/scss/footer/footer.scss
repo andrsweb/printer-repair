@@ -1,0 +1,87 @@
+.footer {
+    padding: 20px 0;
+    background: $main;
+
+    .container {
+        max-width: 1200px;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media all and (min-width: $md) {
+            justify-content: space-between;
+        }
+    }
+
+    &-info {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media all and (min-width: $md) {
+            margin-bottom: 0;
+            width: auto;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 16px;
+            text-align: center;
+            color: $white;
+
+            @media all and (min-width: $m) {
+                font-size: 20px;
+            }
+
+            @media all and (min-width: $md) {
+                text-align: left;
+            }
+        }
+    }
+
+    &-link {
+        font-size: 15px;
+        color: $white;
+        text-decoration: underline;
+
+        @media all and (min-width: $m) {
+            font-size: 20px;
+        }
+    }
+
+    &-text {
+        color: $accent;
+        font-size: 12px;
+
+        @media all and (min-width: $m) {
+            font-size: 15px;
+        }
+    }
+
+    &-phone {
+        width: 100%;
+        text-align: center;
+
+        @media all and (min-width: $md) {
+            width: auto;
+            text-align: left;
+        }
+
+        a {
+            font-weight: $fw-bold;
+            font-size: 20px;
+            color: $white;
+
+            @media all and (min-width: $m) {
+                font-size: 30px;
+            }
+        }
+
+        .footer-text {
+            font-size: 20px;
+        }
+    }
+}

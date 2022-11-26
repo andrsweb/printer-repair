@@ -54,6 +54,10 @@
 			color: $black;
 			text-shadow: 1px 1px 2px #000;
 
+			@media all and (min-width: $xl) {
+				font-size: 25px;
+			}
+
 			span {
 				transition: color ease $tr,
 						text-shadow ease $tr;

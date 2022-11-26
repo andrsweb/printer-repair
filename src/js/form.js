@@ -1,9 +1,10 @@
-/**
- * Submit form.
- *
- * @param {String}	selector	Form CSS-selector.
- */
-const submitForm = ( selector ) => {
+document.addEventListener( 'DOMContentLoaded', () => {
+    'use strict'
+
+    submitForm( '.form', '.form-response', 'send-form.php')
+} )
+
+const submitForm = ( selector, response, php ) => {
 	const forms	= document.querySelectorAll( selector )
 
 	if( ! forms.length ) return
@@ -12,15 +13,11 @@ const submitForm = ( selector ) => {
 		form.addEventListener( 'submit', e => {
 			e.preventDefault()
 
-			const formResponse	= form.querySelector( '.form-response' ),
+			const formResponse	= form.querySelector( response ),
 					request		= new XMLHttpRequest(),
-					formData	= new FormData( form )
+					formData		= new FormData( form )
 
-			// Add request param for large or small form.
-			form.classList.contains( 'small-form' )
-				? formData.append( 'func', 'as_send_small_form' )
-				: formData.append( 'func', 'as_send_large_form' )
-			request.open( 'post', 'send-form.php', true )
+			request.open( 'post', php, true )
 			request.responseType = 'json'
 
 			formResponse.classList.remove( ['success', 'error'] )

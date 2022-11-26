@@ -15,7 +15,7 @@
 		display: flex;
 		align-items: center;
 		cursor: pointer;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 
 		@media all and (min-width: $md) {
 			margin-bottom: 0;
@@ -30,9 +30,11 @@
 
 			.header-logo-text {
 				color: $white;
+				text-shadow: 1px 1px 2px #fff;
 
 				span {
 					color: $black;
+					text-shadow: 1px 1px 2px #000;
 				}
 			}
 		}
@@ -47,12 +49,16 @@
 			font-weight: $fw-bold;
 			text-transform: uppercase;
 			font-size: 20px;
-			transition: color ease $tr;
+			transition: color ease $tr,
+					text-shadow ease $tr;
 			color: $black;
+			text-shadow: 1px 1px 2px #000;
 
 			span {
-				transition: color ease $tr;
+				transition: color ease $tr,
+						text-shadow ease $tr;
 				color: $white;
+				text-shadow: 1px 1px 2px #fff;
 			}
 		}
 	}
@@ -102,7 +108,7 @@
 		text-transform: uppercase;
 		font-size: 20px;
 		color: $white;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		text-shadow: 1px 1px 2px #fff;
 
 		@media all and (min-width: $md) {

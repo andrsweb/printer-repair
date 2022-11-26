@@ -46,6 +46,7 @@
     "last 3 versions"
   ],
   "dependencies": {
-    "@critick/astimer": "^1.0.3"
+    "@critick/astimer": "^1.0.3",
+    "inputmask": "^5.0.7"
   }
 }

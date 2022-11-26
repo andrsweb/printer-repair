@@ -5,3 +5,4 @@ document.addEventListener( 'DOMContentLoaded', () => {
 } )
 
 const t = new ASTimer('.timer')
+

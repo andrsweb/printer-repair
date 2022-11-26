@@ -1,0 +1,19 @@
+.button {
+    padding: 5px 50px;
+    font-family: $ff;
+    font-size: 15px; //
+    border: 0;
+    border-radius: $border;
+    background: $span;
+    color: $white;
+    transition: opacity ease $tr;
+    cursor: pointer;
+
+    @media all and (min-width: $md) {
+        font-size: 20px;
+    }
+
+    &:hover {
+        opacity: $op;
+    }
+}

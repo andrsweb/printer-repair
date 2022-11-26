@@ -1,0 +1,93 @@
+.hero {
+	padding: 250px 0 30px ;
+	background: $accent;
+
+	@media all and (min-width: $md) {
+		padding: 150px 0 50px;
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+
+	h1 {
+		font-size: 25px;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $xl) {
+			font-size: 40px
+		}
+	}
+
+	h2 {
+		font-size: 20px;
+
+		@media all and (min-width: $xl) {
+			font-size: 30px
+		}
+	}
+
+	&-items {
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&-list {
+		width: 100%;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+			margin-bottom: 0;
+		}
+
+		&-item {
+			font-weight: $fw-bold;
+			font-size: 15px; //
+			color: $main;
+			position: relative;
+			padding-left: 30px;
+			margin-bottom: 10px;
+
+			@media all and (min-width: $sm) {
+				font-size: 20px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 25px;
+			}
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				background: $main;
+				transform: translateY( -50% );
+				border-bottom-right-radius: 10px;
+				border-top-left-radius: 10px;
+				border: 2px solid $white;
+			}
+
+			span {
+				color: rgb(202, 13, 13);
+			}
+		}
+	}
+
+	&-image {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+			justify-content: flex-end;
+		}
+	}
+}

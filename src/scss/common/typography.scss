@@ -5,6 +5,13 @@ h3, .h3 {
 	font-weight: $fw-bold;
 	line-height: $lh-title;
 	margin: 0;
+	text-align: center;
+	text-shadow: 1px 1px 2px #000;
+
+	&::selection {
+		background: $main;
+		color: $white;
+	}
 }
 
 h1, .h1 {
@@ -35,6 +42,11 @@ a {
 	transition: opacity ease-out $tr;
 	color: $black;
 
+	&::selection {
+		background: $main;
+		color: $white;
+	}
+
 	&:hover {
 		opacity: $op;
 	}
@@ -42,8 +54,34 @@ a {
 
 p {
 	margin: 0;
+
+	&::selection {
+		background: $main;
+		color: $white;
+	}
 }
 
 b, strong {
 	font-weight: $fw-bold
+}
+
+div {
+	&::selection {
+		background: $main;
+		color: $white;
+	}
+}
+
+li {
+	&::selection {
+		background: $main;
+		color: $white;
+	}
+}
+
+span {
+	&::selection {
+		background: $black;
+		color: $white;
+	}
 }

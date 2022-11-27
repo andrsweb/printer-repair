@@ -30,15 +30,15 @@
     &-col {
         display: flex;
         align-items: center;
-        font-size: 11px;
+        font-size: 13px;
         border-radius: $border;
 
         @media all and (min-width: $sm) {
-            font-size: 15px;
+            font-size: 20px;
         }
 
         @media all and (min-width: $md) {
-            font-size: 20px;
+            font-size: 22px;
         }
 
         @media all and (min-width: $xl) {
@@ -58,6 +58,7 @@
             width: 62.5%;
             justify-content: center;
             background: $accent;
+            text-align: center;
         }
 
         &:last-child {

@@ -30,8 +30,16 @@
     &-col {
         display: flex;
         align-items: center;
-        font-size: 13px;
+        font-size: 11px;
         border-radius: $border;
+
+        @media all and (min-width: 380px) {
+            font-size: 14px;
+        }
+
+        @media all and (min-width: 430px) {
+            font-size: 16px;
+        }
 
         @media all and (min-width: $sm) {
             font-size: 20px;

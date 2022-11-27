@@ -1,0 +1,55 @@
+.why-we {
+    padding: 30px 0;
+
+    @media all and (min-width: $md) {
+        padding: 50px 0;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    h2 {
+        color: $span;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-item {
+        position: relative;
+        font-weight: $fw-bold;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: $main;
+        padding-left: 40px;
+
+        @media all and (min-width: $md) {
+            font-size: 25px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY( -50% )
+                        rotate( 45deg );
+            width: 15px;
+            height: 30px;
+            border-bottom: 5px solid $span;
+            border-right: 5px solid $span;
+        }
+    }
+
+    &-text {
+        font-size: 12px;
+
+        @media all and (min-width: $md) {
+            font-size: 15px;
+        }
+    }
+}

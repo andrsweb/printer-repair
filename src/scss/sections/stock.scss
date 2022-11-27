@@ -1,0 +1,130 @@
+.stock {
+	padding: 20px 0;
+
+	@media all and (min-width: $md) {
+		padding: 50px 0;
+	}
+
+	.container {
+		max-width: 1400px;
+	}
+
+	h2 {
+		font-size: 60px;
+		margin-bottom: 20px;
+		text-align: center;
+		color: $span;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 0;
+		}
+	}
+
+	h3 {
+		font-size: 30px;
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 25px;
+		}
+
+		@media all and (min-width: $xxl) {
+			font-size: 30px;
+		}
+	}
+
+	&-headings {
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		.timer {
+			width: 100%;
+			padding: 10px 10px 20px 10px;
+			background: $main;
+			font-family: $ff;
+			font-weight: $fw-bold;
+			font-size: 35px;
+			border-radius: $border;
+			color: $white;
+			display: flex;
+			justify-content: space-between;
+
+			@media all and (min-width: $m) {
+				font-size: 60px;
+				padding: 0 60px 30px 60px;
+			}
+
+			@media all and (min-width: $lg) {
+				width: 50%;
+			}
+
+			.days, .hours, .minutes, .seconds {
+				display: flex;
+				justify-content: center;
+
+				&::after {
+					content: "Дней";
+					position: absolute;
+					bottom: -10px;
+					left: 50%;
+					transform: translateX( -50% );
+					font-size: 15px;
+
+					@media all and (min-width: $m) {
+						font-size: 20px;
+						bottom: -20px;
+					}
+				}
+			}
+
+			.days {
+				position: relative;
+				width: 25%;
+
+				&::after {
+					content: "Дней";
+				}
+			}
+
+			.hours {
+				position: relative;
+				width: 25%;
+
+				&::after {
+					content: "Часов";
+				}
+			}
+
+			.minutes {
+				position: relative;
+				width: 25%;
+
+				&::after {
+					content: "Минут";
+				}
+			}
+
+			.seconds {
+				position: relative;
+				width: 25%;
+
+				&::after {
+					content: "Секунд";
+				}
+			}
+		}
+	}
+}

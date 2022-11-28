@@ -4,9 +4,10 @@ h3, .h3 {
 	font-family: $ff;
 	font-weight: $fw-bold;
 	line-height: $lh-title;
+	color: #345d5f;
 	margin: 0;
 	text-align: center;
-	text-shadow: 1px 1px 2px #000;
+	text-shadow: 1px 1px 2px rgb(11, 49, 37);
 
 	&::selection {
 		background: $main;

@@ -1,20 +1,31 @@
-import ASTimer from '@critick/astimer'
-
 document.addEventListener( 'DOMContentLoaded', () => {
-	'use strict'
+    'use strict'
 
     timer()
+
 } )
 
 const timer = () => {
-    const timerDiv = document.querySelector( '.timer' )
-    const timerPop = document.querySelectorAll( '.timer-pop' )
+    let time = 3515
+    const countDown = document.querySelectorAll( '.timer' )
 
-    if( ! timerDiv && ! timerPop ) return
+    function minutesAndSeconds() {
+        const minutes = Math.floor( time / 60 )
+        let seconds   = time % 60
+        seconds = seconds < 10 ? '0' + seconds : seconds
 
-    const t = new ASTimer('.timer')
-    const timerPopup = new ASTimer('.timer-pop')
+        countDown.forEach( timer => {
+        timer.innerHTML = `
+                <div class="days">00</div>
+                <div class="hours">00</div>
+                <div class="minutes">${ minutes }</div>
+                <div class="seconds">${ seconds }</div>
+            `
+        } )
+
+        time --
+        if( time === -1 ) time = 3515
+    }
+
+    setInterval( minutesAndSeconds, 1000 )
 }
-
-
-

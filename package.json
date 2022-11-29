@@ -46,7 +46,6 @@
     "last 3 versions"
   ],
   "dependencies": {
-    "@critick/astimer": "^1.0.3",
     "body-scroll-lock": "^4.0.0-beta.0",
     "inputmask": "^5.0.7"
   }

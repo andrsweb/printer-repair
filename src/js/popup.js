@@ -16,7 +16,7 @@ const showPopup = () => {
     body.addEventListener( 'mouseleave', () => {
 
         if(  ! localStorage.getItem( 'showed' ) && ! popupWrapper.classList.contains( 'showed' ) ) {
-            // localStorage.setItem( 'showed', 1 )
+            localStorage.setItem( 'showed', 1 )
             popupWrapper.classList.add( 'showed' )
             disableBodyScroll( getTargetElement() )
         }

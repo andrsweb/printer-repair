@@ -1,0 +1,13 @@
+.links-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        width: 25%;
+        font-family: $ff;
+        font-weight: $fw-bold;
+        font-size: 20px;
+        color: $main;
+        margin-bottom: 10px;
+    }
+}

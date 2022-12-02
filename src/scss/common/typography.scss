@@ -22,6 +22,10 @@ h1, .h1 {
 	@media all and (min-width: $lg) {
 		font-size: 40px
 	}
+
+	span {
+		color: $span;
+	}
 }
 
 h2, .h2 {
